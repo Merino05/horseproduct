@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #slider {
+            margin-right: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        #slider img {
+            display: none;
+        }
+
+        #slider .active {
+            display: block;
+
+            height: 60vh;
+            margin: 40px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="slider">
+        <h1>Quality illuminates our path</h1>
+        <img class="active" id="slide1" src="/img/download (2).jpg" alt="">
+        <img id="slide2" src="/img/sjsjsjj.jpg" alt="">
+        <img id="slide3" src="/img/f9b754200da1e8d8c8769b0f7d9c43d2.jpg" alt="">
+        <img id="slide4" src="/img/8f88b50da6d3fca405547bff46abcb9f.jpg" alt="">
+        <img id="slide5" src="/img/cc12b2826b17b9bfb68c6f1247d268b7.jpg" alt="">
+        <img id="slide6" src="/img/Premium Vector _ Vintage cattle (1).jpg" alt="">
+        <img id="slide7" src="/img/Abbott Family Farm (5).jpg" alt="">
+        <img id="slide8" src="/img/Vector of cow head design_ Animal_.jpg" alt="">
+    </div>
+    <script>
+        let slideIndex = 1;
+        function setSlide(input, index) {
+            slideIndex = index;
+            let item = document.querySelector(`#${input}`);
+
+            let slides = [...document.querySelector("#slider").children];
+            slides.forEach((element) => {
+                element.classList.remove("active")
+            })
+            item.classList.add("active");
+
+        }
+        setInterval(() => {
+            slideIndex += 1;
+            if (slideIndex == 9) { slideIndex = 1; }
+
+            setSlide(`slide${slideIndex}`, slideIndex)
+
+        }, 6000);
+    </script>
+</body>
+
+</html>

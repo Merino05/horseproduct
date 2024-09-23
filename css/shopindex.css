@@ -1,0 +1,54 @@
+body{
+    background-color: aliceblue;
+}
+.containerr {
+    padding: 30px 20px;
+    padding-top: 100px;
+    margin: auto;
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+ 
+}
+
+.kids {
+    margin: 20px auto;
+    background-color: white;
+    padding: 40px 20px;
+    border-radius: 30px;
+}
+
+.kids img {
+    width: 300px;
+}
+
+.btn1 a {
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+    background-color: white;
+    padding: 5px 10px;
+    font-size: 3em;
+    border-radius: 30px;
+    border: 2px solid rgb(127, 170, 255);
+    color: rgb(127, 170, 255);
+    text-decoration: none;
+
+
+}
+
+
+
+.kids a:hover {
+    background-color: rgb(127, 170, 255);
+    color: white;
+}
+
+.kids a:active {
+    font-weight: 800;
+}
+.navbar{
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+  }

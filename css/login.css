@@ -1,0 +1,29 @@
+.navbar{
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+    text-align: left;
+  }
+body{
+    text-align: center;
+}
+.setup{
+  margin-top: 70px;
+}
+input{
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  background-color: rgb(218, 220, 223);
+  border-radius: 10px;
+  outline: none ;
+  width: 40%;
+}
+.setup button{
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  background-color: rgb(118, 118, 118);
+  border-radius: 10px;
+  outline: none ;
+  color: white;
+}
